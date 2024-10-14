@@ -14,4 +14,9 @@ require 'which-key'.register {
   ['<localleader>ocb'] = { function() F.just_run_silent_nooutput { 'start', '/d', F.get_parent(), 'bash', } end, 'open.outside: bash', mode = { 'n', 'v', }, silent = true, },
   ['<localleader>oci'] = { function() F.just_run_silent_nooutput { 'start', '/d', F.get_parent(), 'ipython', } end, 'open.outside: ipython', mode = { 'n', 'v', }, silent = true, },
   ['<localleader>ocl'] = { function() F.just_run_silent_nooutput { 'start', '/d', F.get_parent(), 'lazygit', } end, 'open.outside: lazygit', mode = { 'n', 'v', }, silent = true, },
+
+  ['<leader>o<leader>'] = { name = 'open.more', },
+  ['<leader>o<leader>a'] = { function() F.jump_or_split(DpTemp .. '\\a.txt') end, 'open: a.txt', mode = { 'n', 'v', }, silent = true, },
+  ['<leader>o<leader>b'] = { function() F.jump_or_split(DpTemp .. '\\b.txt') end, 'open: b.txt', mode = { 'n', 'v', }, silent = true, },
+  ['<leader>o<leader>c'] = { function() F.run__silent(F.format('Bcomp %s %s', DpTemp .. '\\a.txt', DpTemp .. '\\b.txt')) end, 'open: b.txt', mode = { 'n', 'v', }, silent = true, },
 }
