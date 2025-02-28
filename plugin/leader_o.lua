@@ -5,6 +5,7 @@ require 'which-key'.register {
   ['<localleader>o'] = { name = 'open.outside', },
   -- ['<leader>oo'] = { function() F.jump_or_split(Note .. '\\init.org') end, 'open: init.org', mode = { 'n', 'v', }, silent = true, },
   ['<leader>ow'] = { function() F.jump_or_split(W .. '\\work.md') end, 'open: work.md', mode = { 'n', 'v', }, silent = true, },
+  ['<leader>oo'] = { function() F.jump_or_split(W .. '\\work_done.md') end, 'open: work_done.md', mode = { 'n', 'v', }, silent = true, },
   -- ['<leader>ow'] = { function() F.jump_or_split(Note .. '\\work.md') end, 'open: work.md', mode = { 'n', 'v', }, silent = true, },
   ['<leader>oa'] = { function() F.jump_or_split(W .. '\\work_summary_day.md') end, 'open: work_summary_day.md', mode = { 'n', 'v', }, silent = true, },
   ['<leader>oe'] = { function() F.jump_or_split(W .. '\\work_summary_week.md') end, 'open: work_summary_week.md', mode = { 'n', 'v', }, silent = true, },
