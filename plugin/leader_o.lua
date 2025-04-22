@@ -6,6 +6,11 @@ require 'which-key'.register {
   -- ['<leader>oo'] = { function() F.jump_or_split(Note .. '\\init.org') end, 'open: init.org', mode = { 'n', 'v', }, silent = true, },
   ['<leader>ow'] = { function() F.jump_or_split(W .. '\\work.md') end, 'open: work.md', mode = { 'n', 'v', }, silent = true, },
   ['<leader>oo'] = { function() F.jump_or_split(W .. '\\work_done.md') end, 'open: work_done.md', mode = { 'n', 'v', }, silent = true, },
+
+  ['<leader>oi'] = { function() F.run__silent(L .. '\\diary\\028-1-20250418-总表.xlsx') end, 'open: 028-1-20250418-总表.xlsx', mode = { 'n', 'v', }, silent = true, },
+  ['<leader>o<leader>i'] = { function() F.telescope_sel({ L .. '\\diary\\I', }, 'fd') end, 'open under: 028-1-20250418-总表.xlsx', mode = { 'n', 'v', }, silent = true, },
+  ['<leader>o<leader>I'] = { function() F.create_under(L .. '\\diary\\I') end, 'create for: 028-1-20250418-总表.xlsx', mode = { 'n', 'v', }, silent = true, },
+
   -- ['<leader>ow'] = { function() F.jump_or_split(Note .. '\\work.md') end, 'open: work.md', mode = { 'n', 'v', }, silent = true, },
   ['<leader>oa'] = { function() F.jump_or_split(W .. '\\work_summary_day.md') end, 'open: work_summary_day.md', mode = { 'n', 'v', }, silent = true, },
   ['<leader>oe'] = { function() F.jump_or_split(W .. '\\work_summary_week.md') end, 'open: work_summary_week.md', mode = { 'n', 'v', }, silent = true, },
