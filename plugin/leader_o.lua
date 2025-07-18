@@ -17,6 +17,7 @@ require 'which-key'.register {
   ['<leader>oa'] = { function() F.jump_or_split(W .. '\\work_summary_week_all.md') end, 'open: work_summary_week_all.md', mode = { 'n', 'v', }, silent = true, },
   -- ['<leader>oo'] = { function() F.jump_or_split(W .. '\\work_summary_week_one.md') end, 'open: work_summary_week_one.md', mode = { 'n', 'v', }, silent = true, },
   ['<leader>oo'] = { function() F.work_summary_week_open_one() end, 'open: work_summary_week_open_one', mode = { 'n', 'v', }, silent = true, },
+  ['<leader>o<leader>o'] = { function() F.work_summary_week_open_one_to_edit() end, 'open: work_summary_week_open_one', mode = { 'n', 'v', }, silent = true, },
   ['<leader>oc'] = { function() F.jump_or_split(StdConfig .. 'init.lua') end, 'open: init.lua', mode = { 'n', 'v', }, silent = true, },
   ['<leader>o<leader>d'] = { function() F.jump_or_split(Dp) end, 'open: Dp', mode = { 'n', 'v', }, silent = true, },
   ['<leader>op'] = { function() F.jump_or_split(vim.fn.getreg '+') end, 'open: clipboard', mode = { 'n', 'v', }, silent = true, },
